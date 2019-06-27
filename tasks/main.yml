@@ -1,0 +1,10 @@
+---
+- name: Test Debug
+  debug:
+     msg: "{{ inventory_hostname }}"
+
+- debug:
+     msg: "{{ ansible_host }}"
+
+- debug:
+    var: hostvars[inventory_hostname]
